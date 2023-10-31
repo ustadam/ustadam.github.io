@@ -81,6 +81,69 @@ h6 {
 }
 
 /*--------------------------------------------------------------
+# Cource Details Tabs
+--------------------------------------------------------------*/
+.cource-details-tabs {
+  overflow: hidden;
+  padding-top: 0;
+}
+
+.cource-details-tabs .nav-tabs {
+  border: 0;
+}
+
+.cource-details-tabs .nav-link {
+  border: 0;
+  padding: 12px 15px 12px 0;
+  transition: 0.3s;
+  color: var(--color-primary-light);
+  border-radius: 0;
+  border-right: 2px solid #e2e7e4;
+  font-weight: 600;
+  font-size: 17px;
+}
+
+.cource-details-tabs .nav-link:hover {
+  color: var(--color-secondary);
+}
+
+.cource-details-tabs .nav-link.active {
+  color: var(--color-secondary);
+  border-color: var(--color-secondary);
+}
+
+.cource-details-tabs .tab-pane.active {
+  animation: fadeIn 0.5s ease-out;
+}
+
+.tab-pane h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: var(--color-primary-light);
+}
+
+.cource-details-tabs .details p {
+  color: var(--color-primary-dark);
+}
+
+.cource-details-tabs .details p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 992px) {
+  .cource-details-tabs .nav-link {
+    border: 0;
+    padding: 15px;
+  }
+
+  .cource-details-tabs .nav-link.active {
+    color: #fff;
+    background: #2487ce;
+  }
+}
+
+/*--------------------------------------------------------------
 # Sections & Section Header
 --------------------------------------------------------------*/
 section {
