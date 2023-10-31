@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Ustadam - PF Course</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/logo.png" rel="icon">
+  <link href="assets/img/logo.png" rel="ustadam-touch-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <link href="assets/css/variables-ustadam.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <style>
+    .list-group-item.active {
+      background-color: #fff;
+      color: #16507b;
+      font-style: italic;
+      font-weight: 550;
+      border: var(--bs-list-group-border-width) solid var(--bs-list-group-border-color);
+    }
+
+    .list-group-item:hover:not(.active) {
+      background-color: #f9f7fe;
+      color: #16507b;
+    }
+
+    .list-group-item:first-child {
+      border-top-left-radius: unset;
+      border-top-right-radius: unset;
+    }
+
+    .list-group-item:last-child {
+      border-bottom-right-radius: unset;
+      border-bottom-left-radius: unset;
+    }
+
+    .accordion-button:not(.collapsed) {
+      background-color: #f9f7fe;
+      color: #16507b;
+      box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 #16507b;
+    }
+
+    .accordion-button {
+      color: #16507b;
+      font-weight: bold;
+      background-color: #f9f7fe;
+    }
+
+    #loader {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      width: fit-content;
+      transform: translate(-50%, -50%);
+    }
+
+    #loader img {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top" data-scrollto-offset="0">
+    <div class="container-fluid d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex justify-content-center align-items-center scrollto">
+        <img src="assets/img/logo.png" alt="">
+        <h1 class="logo pt-1 mt-1">Ustadam<span>.</span></h1>
+      </a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="index.html" class="nav-link scrollto">Home</a></li>
+          <li><a class="nav-link scrollto" href="index.html#services">Courses</a></li>
+          <li><a class="nav-link scrollto" href="index.html#about">About</a></li>
+          <li><a class="nav-link scrollto" href="index.html#faq">FAQs</a></li>
+          <li><a class="nav-link scrollto" href="index.html#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle d-none"></i>
+      </nav><!-- .navbar -->
+
+      <a class="btn-getstarted scrollto" href="index.html#services">Get Started</a>
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Programming Fundamentals C++</h2>
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li>PF C++ Details</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+     <!-- ======= Portfolio Details Section ======= -->
+     <section id="course-details" class="portfolio-details">
+      <div class="container">
+
+        <div class="row gy-4">
+          <div class="col-md-4" data-aos="fade-right" data-aos-delay="100">
+            <div class="accordion" id="accordionExample">
+              <!-- week 1 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    <i class="bi bi-stars me-1"></i>
+                    Week 1 - Introduction to Computing
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample">
+                  <ul class="list-group">
+                    <li class="list-group-item active" onclick="showSlide(1)"><i class="bi bi-file-earmark-easel"></i>
+                      Components of a Machine And how it works
+                    </li>
+                    <li class="list-group-item" onclick="showSlide(2)"><i class="bi bi-file-earmark-easel"></i>
+                      Displaying Output on Console in C++</li>
+                    <li class="list-group-item" onclick="showSlide(3)">
+                      <i class="bi bi-file-earmark-easel"></i> Displaying Geometric Shapes on Console in C++
+                    </li>
+                    <li class="list-group-item" onclick="showSlide(4)">
+                      <i class="bi bi-youtube"></i> Components of a Machine And how it works
+                    </li>
+                    <li class="list-group-item" onclick="showSlide(5)">
+                      <i class="bi bi-youtube"></i> Displaying Output on Console in C++
+                    </li>
+                    <li class="list-group-item" onclick="showSlide(6)">
+                      <i class="bi bi-youtube"></i> Displaying Geometric Shapes on Console in C++
+                    </li>
+                    <li class="list-group-item" onclick="showSlide(7)"><i class="bi bi-file-earmark-pdf"></i> Lab
+                      Manual
+                    </li>
+                    <li class="list-group-item" onclick="showSlide(8)"><i class="bi bi-file-earmark-pdf"></i>
+                      Programming Day Tasks</li>
+                    <li class="list-group-item" onclick="showSlide(9)">
+                      <i class="bi bi-file-earmark-pdf"></i> Chapter 1 - Displaying Output on the Console
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- week 2 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <i class="bi bi-stars me-1"></i>
+                    Week 2 - Applications of Mathematical Expressions in C++
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionExample">
+                  <ul class="list-group">
+                    <li class="list-group-item" onclick="showSlide(10)"><i class="bi bi-file-earmark-easel"></i> Writing
+                      C++ Program to Take Input, Process
+                      it and Give Output on Console
+                    </li>
+                    <li class="list-group-item" onclick="showSlide(11)"><i class="bi bi-file-earmark-easel"></i>
+                      Variables, DataTypes, Arithmetic Operators and
+                      Expression
+                    </li>
+                    <li class="list-group-item" onclick="showSlide(12)">
+                      <i class="bi bi-file-earmark-easel"></i> Writing C++ Program using expressions to solve real world
+                      problems
+                    </li>
+                    <li class="list-group-item" onclick="showSlide(13)">
+                      <i class="bi bi-youtube"></i> Writing C++ Program to Take Input, Process
+                      it and Give Output on Console
+                    </li>
+                    <li class="list-group-item" onclick="showSlide(14)">
+                      <i class="bi bi-youtube"></i> Variables, DataTypes, Arithmetic Operators and
+                      Expression
+                    </li>
+                    <li class="list-group-item" onclick="showSlide(15)">
+                      <i class="bi bi-youtube"></i> Writing C++ Program using expressions to solve real world problems
+                    </li>
+                    <li class="list-group-item" onclick="showSlide(16)"><i class="bi bi-file-earmark-pdf"></i> Lab
+                      Manual
+                    </li>
+                    <li class="list-group-item" onclick="showSlide(17)"><i class="bi bi-file-earmark-pdf"></i>
+                      Programming Day Tasks</li>
+                    <li class="list-group-item" onclick="showSlide(18)">
+                      <i class="bi bi-file-earmark-pdf"></i> Chapter 2 - Applications of Variables and Mathematical
+                      Expressions
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- week 3 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#heading3" aria-expanded="false" aria-controls="heading3">
+                    <i class="bi bi-stars me-1"></i>
+                    Week 3 - A Gentle Introduction to Reusability, Decision Making and Repeatability
+                  </button>
+                </h2>
+                <div id="heading3" class="accordion-collapse collapse" aria-labelledby="heading3"
+                  data-bs-parent="#accordionExample">
+                  <ul class="list-group">
+                    <li class="list-group-item" onclick="showSlide(19)"><i class="bi bi-file-earmark-easel"></i> A
+                      Gentle Introduction to Reusability, Decision Making and Repeatability
+                    </li>
+                    <li class="list-group-item" onclick="showSlide(20)"><i class="bi bi-file-earmark-easel"></i>
+                      Display the output on Console at a Specific Location
+                    </li>
+                    <li class="list-group-item" onclick="showSlide(21)">
+                      <i class="bi bi-youtube"></i> Functions
+                    </li>
+                    <li class="list-group-item" onclick="showSlide(22)"><i class="bi bi-file-earmark-pdf"></i> Lab
+                      Manual
+                    </li>
+                    <li class="list-group-item" onclick="showSlide(23)"><i class="bi bi-file-earmark-pdf"></i>
+                      Programming Day Tasks</li>
+                    <li class="list-group-item" onclick="showSlide(24)">
+                      <i class="bi bi-file-earmark-pdf"></i> Chapter 3 - A Gentle Introduction to Reusability, Decision
+                      Making and Repeatability
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- week 4 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#heading4" aria-expanded="false" aria-controls="heading4">
+                    <i class="bi bi-stars me-1"></i>
+                    Week 4 - Code Reusability with your own as well as other’s Functions
+                  </button>
+                </h2>
+                <div id="heading4" class="accordion-collapse collapse" aria-labelledby="heading4"
+                  data-bs-parent="#accordionExample">
+                  <ul class="list-group">
+                    <li class="list-group-item" onclick="showSlide(25)"><i class="bi bi-file-earmark-easel"></i> Void vs
+                      Value Returning
+                      Functions
+                    </li>
+                    <li class="list-group-item" onclick="showSlide(26)"><i class="bi bi-file-earmark-easel"></i>
+                      First Version of POS System
+                    </li>
+                    <li class="list-group-item" onclick="showSlide(27)"><i class="bi bi-file-earmark-easel"></i>
+                      Game Development
+                    </li>
+                    <li class="list-group-item" onclick="showSlide(28)">
+                      <i class="bi bi-youtube"></i> Void vs Value Returning Functions
+                    </li>
+                    <li class="list-group-item" onclick="showSlide(29)">
+                      <i class="bi bi-youtube"></i> Local vs Global Variables
+                    </li>
+                    <li class="list-group-item" onclick="showSlide(30)"><i class="bi bi-file-earmark-pdf"></i> Lab
+                      Manual
+                    </li>
+                    <li class="list-group-item" onclick="showSlide(31)"><i class="bi bi-file-earmark-pdf"></i>
+                      Programming Day Tasks</li>
+                    <li class="list-group-item" onclick="showSlide(32)">
+                      <i class="bi bi-file-earmark-pdf"></i> Chapter 4 - Code Reusability with Pre-defined and
+                      User-defined Functions
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- week 5 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#heading5" aria-expanded="false" aria-controls="heading5">
+                    <i class="bi bi-stars me-1"></i>
+                    Week 5 - Decision Making with Complex Conditional Statements
+                  </button>
+                </h2>
+                <div id="heading5" class="accordion-collapse collapse" aria-labelledby="heading5"
+                  data-bs-parent="#accordionExample">
+                  <ul class="list-group">
+                    <li class="list-group-item" onclick="showSlide(33)"><i class="bi bi-file-earmark-easel"></i>
+                      Conditions in C++
+                    </li>
+                    <li class="list-group-item" onclick="showSlide(34)"><i class="bi bi-file-earmark-easel"></i>
+                      Writing C++ Functions using complex Conditional Statements to solve real world problems
+                    </li>
+                    <li class="list-group-item" onclick="showSlide(35)">
+                      <i class="bi bi-youtube"></i> Conditions in C++
+                    </li>
+                    <li class="list-group-item" onclick="showSlide(36)">
+                      <i class="bi bi-youtube"></i> Multiple if statements and if-else statements
+                    </li>
+                    <li class="list-group-item" onclick="showSlide(37)">
+                      <i class="bi bi-youtube"></i> Nested If
+                    </li>
+                    <li class="list-group-item" onclick="showSlide(38)">
+                      <i class="bi bi-youtube"></i> Logical Operators & their Precedence
+                    </li>
+                    <li class="list-group-item" onclick="showSlide(39)"><i class="bi bi-file-earmark-pdf"></i> Lab
+                      Manual
+                    </li>
+                    <li class="list-group-item" onclick="showSlide(40)"><i class="bi bi-file-earmark-pdf"></i>
+                      Programming Day Tasks</li>
+                    <li class="list-group-item" onclick="showSlide(41)">
+                      <i class="bi bi-file-earmark-pdf"></i> Chapter 5 - Decision Making with Complex Conditional
+                      Statements
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- week 6 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSix">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#heading6" aria-expanded="false" aria-controls="heading6">
+                    <i class="bi bi-stars me-1"></i>
+                    Week 6 - Loops
+                  </button>
+                </h2>
+                <div id="heading6" class="accordion-collapse collapse" aria-labelledby="heading6"
+                  data-bs-parent="#accordionExample">
+                  <ul class="list-group">
+                    <li class="list-group-item" onclick="showSlide(42)"><i class="bi bi-file-earmark-easel"></i>
+                      Conditional Loops & Counter Loops
+                    </li>
+                    <li class="list-group-item" onclick="showSlide(43)"><i class="bi bi-file-earmark-easel"></i>
+                      Counter Loops And Dependent Sub-problems
+                    </li>
+                    <li class="list-group-item" onclick="showSlide(44)"><i class="bi bi-file-earmark-easel"></i>
+                      Nested For Loops
+                    </li>
+                    <li class="list-group-item" onclick="showSlide(45)">
+                      <i class="bi bi-youtube"></i> Loops
+                    </li>
+                    <li class="list-group-item" onclick="showSlide(46)">
+                      <i class="bi bi-youtube"></i> Counter Loops & Dependent Sub Problems
+                    </li>
+                    <li class="list-group-item" onclick="showSlide(47)">
+                      <i class="bi bi-youtube"></i> Nested For Loops
+                    </li>
+                    <li class="list-group-item" onclick="showSlide(48)"><i class="bi bi-file-earmark-pdf"></i> Lab
+                      Manual
+                    </li>
+                    <li class="list-group-item" onclick="showSlide(49)"><i class="bi bi-file-earmark-pdf"></i>
+                      Programming Day Tasks</li>
+                    <li class="list-group-item" onclick="showSlide(50)">
+                      <i class="bi bi-file-earmark-pdf"></i> Chapter 6 - Repetition with Loops
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- week 7 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSeven">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#heading7" aria-expanded="false" aria-controls="heading7">
+                    <i class="bi bi-stars me-1"></i>
+                    Week 7 - Arrays
+                  </button>
+                </h2>
+                <div id="heading7" class="accordion-collapse collapse" aria-labelledby="heading7"
+                  data-bs-parent="#accordionExample">
+                  <ul class="list-group">
+                    <li class="list-group-item" onclick="showSlide(51)"><i class="bi bi-file-earmark-easel"></i>
+                      Arrays
+                    </li>
+                    <li class="list-group-item" onclick="showSlide(52)"><i class="bi bi-file-earmark-easel"></i>
+                      String as Arrays
+                    </li>
+                    <li class="list-group-item" onclick="showSlide(53)"><i class="bi bi-file-earmark-easel"></i>
+                      Parallel Arrays
+                    </li>
+                    <li class="list-group-item" onclick="showSlide(54)">
+                      <i class="bi bi-youtube"></i> Arrays
+                    </li>
+                    <li class="list-group-item" onclick="showSlide(55)">
+                      <i class="bi bi-youtube"></i> String as Arrays
+                    </li>
+                    <li class="list-group-item" onclick="showSlide(56)">
+                      <i class="bi bi-youtube"></i>
+                      Parallel Arrays
+                    </li>
+                    <li class="list-group-item" onclick="showSlide(57)">
+                      <i class="bi bi-youtube"></i> Sorting in Arrays
+                    </li>
+                    <li class="list-group-item" onclick="showSlide(58)">
+                      <i class="bi bi-youtube"></i>
+                      Sliding Window Problem
+                    </li>
+                    <li class="list-group-item" onclick="showSlide(59)"><i class="bi bi-file-earmark-pdf"></i> Lab
+                      Manual
+                    </li>
+                    <li class="list-group-item" onclick="showSlide(60)"><i class="bi bi-file-earmark-pdf"></i>
+                      Programming Day Tasks</li>
+                    <li class="list-group-item" onclick="showSlide(61)">
+                      <i class="bi bi-file-earmark-pdf"></i> Chapter 7 - Handle Large Number of Records with Arrays
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- week 8 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingEight">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#heading8" aria-expanded="false" aria-controls="heading8">
+                    <i class="bi bi-stars me-1"></i>
+                    Week 8 - Applications of Loops and Arrays
+                  </button>
+                </h2>
+                <div id="heading8" class="accordion-collapse collapse" aria-labelledby="heading8"
+                  data-bs-parent="#accordionExample">
+                  <ul class="list-group">
+                    <li class="list-group-item" onclick="showSlide(62)"><i class="bi bi-file-earmark-easel"></i>
+                      Business Applications Ideas
+                    </li>
+                    <li class="list-group-item" onclick="showSlide(63)"><i class="bi bi-file-earmark-easel"></i>
+                      Console Based Games Ideas
+                    </li>
+                    <li class="list-group-item" onclick="showSlide(64)"><i class="bi bi-file-earmark-pdf"></i> Lab
+                      Manual
+                    </li>
+                    <li class="list-group-item" onclick="showSlide(65)"><i class="bi bi-file-earmark-pdf"></i>
+                      Programming Day Tasks</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-8" data-aos="fade-left" data-aos-delay="100">
+
+            <!-- loader... -->
+            <div id="loader">
+              <img src="./assets/img/loader.gif" alt="Loading....">
+            </div>
+
+            <!-- week 1 -->
+            <div>
+              <div class="slide" id="slide1">
+                <iframe
+                  data-src="https://docs.google.com/presentation/d/e/2PACX-1vS_l2mh7wu2MbvL8krev5rhDB-XpYwMelcDaOd-C8ILubV9XJAL-CVcO8nqaOIpUkTWr8tf0GviaN1_/embed?start=false&loop=false&delayms=3000"
+                  frameborder="0" width="100%" height="500" allowfullscreen="true" mozallowfullscreen="true"
+                  webkitallowfullscreen="true">
+                </iframe>
+              </div>
+              <div class="slide" id="slide2">
+                <iframe
+                  data-src="https://docs.google.com/presentation/d/e/2PACX-1vQzI2YzFEl0Pz-S26bslI_Bvijpme0W17_MDBNOJteqU6s-vkbp0haxJQiEDnSLx3L_s96Sx81V13KE/embed?start=false&loop=false&delayms=3000"
+                  frameborder="0" width="100%" height="500" allowfullscreen="true" mozallowfullscreen="true"
+                  webkitallowfullscreen="true"></iframe>
+              </div>
+              <div class="slide" id="slide3">
+                <iframe
+                  data-src="https://docs.google.com/presentation/d/e/2PACX-1vROoNBVPaLD_yLPuJvLZsEkUkWMjmyDXzxHBFCbGeYqafWfZ07PUrZDMhLcuo8wQtj8vO3jEvMobh-U/embed?start=false&loop=false&delayms=3000"
+                  frameborder="0" width="100%" height="500" allowfullscreen="true" mozallowfullscreen="true"
+                  webkitallowfullscreen="true"></iframe>
+              </div>
+              <div class="slide" id="slide4">
+                <iframe data-src="https://www.youtube.com/embed/dzZ8-s6v5ks?list=PLyHQCzwOOCs_iNOR0nNcGn55IP8boNCVl"
+                  title="Week 1 - Lecture 1 - Components of a Machine and how it works" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen width="100%" height="500"></iframe>
+              </div>
+              <div class="slide" id="slide5">
+                <iframe data-src="https://www.youtube.com/embed/gU8yTFm8_ZM?list=PLyHQCzwOOCs_iNOR0nNcGn55IP8boNCVl"
+                  title="Week 1 - Lecture 3 - Display Output on Monitor Screen in C++" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen width="100%" height="500"></iframe>
+              </div>
+              <div class="slide" id="slide6">
+                <iframe data-src="https://www.youtube.com/embed/ewKMIbb2Jkk?list=PLyHQCzwOOCs_iNOR0nNcGn55IP8boNCVl"
+                  title="Week 1 - Lecture 4 - Display Output in Multiple Lines on the Monitor Screen" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen width="100%" height="500"></iframe>
+              </div>
+              <div class="slide border" id="slide7">
+                <iframe
+                  data-src="https://docs.google.com/document/d/e/2PACX-1vSuBva0Y_lTxqS_AtwVy_cXDPDhO56wLhPD6gwtNsWUEpZ-06MeuK70nrxTZvaZSQV42eBXdhmkmKFR/pub?embedded=true"
+                  width="100%" height="500"></iframe>
+              </div>
+              <div class="slide border" id="slide8">
+                <iframe
+                  data-src="https://docs.google.com/document/d/e/2PACX-1vRf4_9jZTJpeWteiOR2qNLlwsKSNeNyb7CtYmA3XPQRuO9-5ejmXyOiYS6AUbALPlWjgtKOAQZhLMEf/pub?embedded=true"
+                  width="100%" height="500"></iframe>
+              </div>
+              <div class="slide border" id="slide9">
+                <iframe
+                  data-src="https://docs.google.com/document/d/e/2PACX-1vRYqMSuFXY2AB9waAXUyLzGD4eJgVg5PqUYJMw-l1GI5lbZktTm_N1iOY2Bc1WHwA/pub?embedded=true"
+                  width="100%" height="500"></iframe>
+              </div>
+            </div>
+            <!-- week 2 -->
+            <div>
+              <div class=" slide" id="slide10">
+                <iframe
+                  data-src="https://docs.google.com/presentation/d/e/2PACX-1vRfI-CCCzt-zsDxbj7LFHB1GIRsHR9lVssJV62YP_OryqQwaMXIPI-sjUGvlzLzdZbbyhO-UPggnpWe/embed?start=false&loop=false&delayms=3000"
+                  frameborder="0" width="100%" height="500" allowfullscreen="true" mozallowfullscreen="true"
+                  webkitallowfullscreen="true">
+                </iframe>
+              </div>
+              <div class="slide" id="slide11">
+                <iframe
+                  data-src="https://docs.google.com/presentation/d/e/2PACX-1vTWsYdS_4IR1crcv09sI57JMcpprqzX9vQrpsxl1WBtkyc9VGh-Bnbx52NzPTOFTqhvYwMSYFSKpqB0/embed?start=false&loop=false&delayms=3000"
+                  frameborder="0" width="100%" height="500" allowfullscreen="true" mozallowfullscreen="true"
+                  webkitallowfullscreen="true"></iframe>
+              </div>
+              <div class="slide" id="slide12">
+                <iframe
+                  data-src="https://docs.google.com/presentation/d/e/2PACX-1vTUqqj_PIy5Bcw-eJHxucCxOVDd8XNy8OTNAI71VjOXuxBLrVscZncoI0QZzXiKJOm2c2Oft9kcRUEe/embed?start=false&loop=false&delayms=3000"
+                  frameborder="0" width="100%" height="500" allowfullscreen="true" mozallowfullscreen="true"
+                  webkitallowfullscreen="true"></iframe>
+              </div>
+              <div class="slide" id="slide13">
+                <iframe data-src="https://www.youtube.com/embed/q6p4fYQKW7A?list=PLyHQCzwOOCs_iNOR0nNcGn55IP8boNCVl"
+                  title="Week 2 - Lecture 1 - Variables and Data Types" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen width="100%" height="500"></iframe>
+              </div>
+              <div class="slide" id="slide14">
+                <iframe data-src="https://www.youtube.com/embed/7SaJrG2s9_Y?list=PLyHQCzwOOCs_iNOR0nNcGn55IP8boNCVl"
+                  title="Week 2 - Lecture 2 - Use of Variables &amp; Operation on them" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen width="100%" height="500"></iframe>
+              </div>
+              <div class="slide" id="slide15">
+                <iframe data-src="https://www.youtube.com/embed/Wps_cIEXTdk?list=PLyHQCzwOOCs_iNOR0nNcGn55IP8boNCVl"
+                  title="Week 2 - Lecture 3 -  First C++ Program" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen width="100%" height="500"></iframe>
+              </div>
+              <div class="slide border" id="slide16">
+                <iframe
+                  data-src="https://docs.google.com/document/d/e/2PACX-1vQteqQx81YIVf6UM9L0xNgHW8HqjzkoSQpjl5rTEeEjQATCaFt13yxLfDFi15_aZ5XNKyTmpNsI9zkU/pub?embedded=true"
+                  width="100%" height="500"></iframe>
+              </div>
+              <div class="slide border" id="slide17">
+                <iframe
+                  data-src="https://docs.google.com/document/d/e/2PACX-1vRUgpKyGd8XN6i3QAHvF_cJGsBoK_TxLteLaqf1w75iz8J41lEs8jKUMAGvvnj0eZe_ZfzxMJWcPkQA/pub?embedded=true"
+                  width="100%" height="500"></iframe>
+              </div>
+              <div class="slide border" id="slide18">
+                <iframe
+                  data-src="https://docs.google.com/document/d/e/2PACX-1vSoFmr9Xye1yojik0mJ8yUbXiBVy0otoGd034VSXqY_wen9_7EBjWcIcEdmwV9aGKYxBopq9YmMkAUp/pub?embedded=true"
+                  width="100%" height="500"></iframe>
+              </div>
+            </div>
+            <!-- week 3 -->
+            <div>
+              <div class=" slide" id="slide19">
+                <iframe
+                  data-src="https://docs.google.com/presentation/d/e/2PACX-1vT4iNH1H_bq591RHrAdRk6eZMp03unbLSrIjbG_aBmxH__ZBEjvKso5uAQvd8HkZ8tAnGCWKbrIcqZ_/embed?start=false&loop=false&delayms=3000"
+                  frameborder="0" width="100%" height="500" allowfullscreen="true" mozallowfullscreen="true"
+                  webkitallowfullscreen="true">
+                </iframe>
+              </div>
+              <div class="slide" id="slide20">
+                <iframe
+                  data-src="https://docs.google.com/presentation/d/e/2PACX-1vQm8Tdz09bkfn0gGPtOAbpPftAxlqv0_sspa-4oy-A0bOy7_O5G50CEXOLfU5athxzWMoXGJU9ktWsC/embed?start=false&loop=false&delayms=3000"
+                  frameborder="0" width="100%" height="500" allowfullscreen="true" mozallowfullscreen="true"
+                  webkitallowfullscreen="true"></iframe>
+              </div>
+              <div class="slide" id="slide21">
+                <iframe data-src="https://www.youtube.com/embed/PVB4nA4nPmk?list=PLyHQCzwOOCs_iNOR0nNcGn55IP8boNCVl"
+                  title="Week 5 - Lecture 1 - Functions" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen width="100%" height="500"></iframe>
+              </div>
+              <div class="slide border" id="slide22">
+                <iframe
+                  data-src="https://docs.google.com/document/d/e/2PACX-1vSxwIQ5SjtpCmUaavgZnD6SKgwd0xU15ji9V-Ni4ntWGIono6RNBF2aecWWUvwu5t3ptxNu9fKjfEFc/pub?embedded=true"
+                  width="100%" height="500"></iframe>
+              </div>
+              <div class="slide border" id="slide23">
+                <iframe
+                  data-src="https://docs.google.com/document/d/e/2PACX-1vRAhb8OfilkIQSUe76L6YtdKdLRmB6agtj9l1v67UsAZ35XW18ceQZGtbIFd27TsXFEIC1G8biXhO9k/pub?embedded=true"
+                  width="100%" height="500"></iframe>
+              </div>
+              <div class="slide border" id="slide24">
+                <iframe
+                  data-src="https://docs.google.com/document/d/e/2PACX-1vSfl2-2h6d2MZQP3D8mJWmgwmjy8tbThY5eFkM0v4iWR8tbGoWccyYOyZAFJcFwE4m16geHrxRnAOHw/pub?embedded=true"
+                  width="100%" height="500"></iframe>
+              </div>
+            </div>
+            <!-- week 4 -->
+            <div>
+              <div class=" slide" id="slide25">
+                <iframe
+                  data-src="https://docs.google.com/presentation/d/e/2PACX-1vQezOA76CXfbBFgJel4ynmIZf12Gs19aMyl_7qQq71VlIb4qZkOp5cu-7o3LK0BkT29pJ0KELBmHsBW/embed?start=false&loop=false&delayms=3000"
+                  frameborder="0" width="100%" height="500" allowfullscreen="true" mozallowfullscreen="true"
+                  webkitallowfullscreen="true">
+                </iframe>
+              </div>
+              <div class="slide" id="slide26">
+                <iframe
+                  data-src="https://docs.google.com/presentation/d/e/2PACX-1vTbCj1VHfSHvFH-ePLdtcNo7nQInSslvx-8FwaJZ5mJDodiRJWqmGbhaDz5YFLcWFhDET1LeV0MSkeC/embed?start=false&loop=false&delayms=3000"
+                  frameborder="0" width="100%" height="500" allowfullscreen="true" mozallowfullscreen="true"
+                  webkitallowfullscreen="true"></iframe>
+              </div>
+              <div class="slide" id="slide27">
+                <iframe
+                  data-src="https://docs.google.com/presentation/d/e/2PACX-1vS0IKQ1N9y9UufYWbM7ft_P2yFNtG09Exqf-9O-DUU4_eYUOpHDXgLR6a4nObdqbGtmbC2EV47txd5x/embed?start=false&loop=false&delayms=3000"
+                  frameborder="0" width="100%" height="500" allowfullscreen="true" mozallowfullscreen="true"
+                  webkitallowfullscreen="true"></iframe>
+              </div>
+              <div class="slide" id="slide28">
+                <iframe data-src="https://www.youtube.com/embed/v46LW1ZJGCU?list=PLyHQCzwOOCs_iNOR0nNcGn55IP8boNCVl"
+                  title="Week 5 - Lecture 2 - Void vs Value Returning Functions" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen width="100%" height="500"></iframe>
+              </div>
+              <div class="slide" id="slide29">
+                <iframe data-src="https://www.youtube.com/embed/wTC29fkZSBs?list=PLyHQCzwOOCs_iNOR0nNcGn55IP8boNCVl"
+                  title="Week 5 - Lecture 3 - Local vs Global Variables" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen width="100%" height="500"></iframe>
+              </div>
+              <div class="slide border" id="slide30">
+                <iframe
+                  data-src="https://docs.google.com/document/d/e/2PACX-1vSVOerFWgk5LAHtdy856k4FF8d1CWa9BD_nk5ZXZPWooKkkNoEDI3FuUIVOFXZSAKGVdaN0GgPHX1Ym/pub?embedded=true"
+                  width="100%" height="500"></iframe>
+              </div>
+              <div class="slide border" id="slide31">
+                <iframe
+                  data-src="https://docs.google.com/document/d/e/2PACX-1vQWl7771CA8kCdZ79Uq_ZsuFBZiAHPXChjm5LeyvgzTumI_cvlIM-1pbsjKSxe0Px92CzAoDKsSxlCq/pub?embedded=true"
+                  width="100%" height="500"></iframe>
+              </div>
+              <div class="slide border" id="slide32">
+                <iframe
+                  data-src="https://docs.google.com/document/d/e/2PACX-1vQ29ptlbyYhlmeC9p2ZL__mEsBz-SoRj-DghvVZ3slsZWJrgIa5h_xDHOdvClVPZmdB3F8PngHCfo7Y/pub?embedded=true"
+                  width="100%" height="500"></iframe>
+              </div>
+            </div>
+            <!-- week 5 -->
+            <div>
+              <div class=" slide" id="slide33">
+                <iframe
+                  data-src="https://docs.google.com/presentation/d/e/2PACX-1vSWqI_XYPbfFiPPUUSAFaD6Y1ma4TYd7Z1ISx4jZuwTyADtJwbaspIyfIDF2Db5N3r4uVsbHV35NQrC/embed?start=false&loop=false&delayms=3000"
+                  frameborder="0" width="100%" height="500" allowfullscreen="true" mozallowfullscreen="true"
+                  webkitallowfullscreen="true">
+                </iframe>
+              </div>
+              <div class="slide" id="slide34">
+                <iframe
+                  data-src="https://docs.google.com/presentation/d/e/2PACX-1vRp6LDw3ZejZMgpFj2MyTgJC7pHJhB6rCyTDkqlvytPmRUiLqijNjbneje3U8PoOB3AbA8Rtnps73_c/embed?start=false&loop=false&delayms=3000"
+                  frameborder="0" width="100%" height="500" allowfullscreen="true" mozallowfullscreen="true"
+                  webkitallowfullscreen="true"></iframe>
+              </div>
+              <div class="slide" id="slide35">
+                <iframe data-src="https://www.youtube.com/embed/7fwh8G8tkTo?list=PLyHQCzwOOCs_iNOR0nNcGn55IP8boNCVl"
+                  title="Week 3 - Lecture 1 - Conditions in C++" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen width="100%" height="500"></iframe>
+              </div>
+              <div class="slide" id="slide36">
+                <iframe data-src="https://www.youtube.com/embed/B9VYLoQkq9k?list=PLyHQCzwOOCs_iNOR0nNcGn55IP8boNCVl"
+                  title="Week 3 - Lecture 2 - Multiple if statements and if-else statements" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen width="100%" height="500"></iframe>
+              </div>
+              <div class="slide" id="slide37">
+                <iframe data-src="https://www.youtube.com/embed/FDnj5UmNkv8?list=PLyHQCzwOOCs_iNOR0nNcGn55IP8boNCVl"
+                  title="Week 4 - Lecture 1 - Nested If" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen width="100%" height="500"></iframe>
+              </div>
+              <div class="slide" id="slide38">
+                <iframe data-src="https://www.youtube.com/embed/Yk4A7nodTCs?list=PLyHQCzwOOCs_iNOR0nNcGn55IP8boNCVl"
+                  title="Week 4 - Lecture 2 - Logical Operators &amp; their Precedence" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen width="100%" height="500"></iframe>
+              </div>
+              <div class="slide border" id="slide39">
+                <iframe
+                  data-src="https://docs.google.com/document/d/e/2PACX-1vRar1zzfiplU5WqN5Xc9l_UODWHAFeT48wULXdIIRJJ1DTJGRpJ13WZjIU-pLTv1CGRUkupEMgm8niw/pub?embedded=true"
+                  width="100%" height="500"></iframe>
+              </div>
+              <div class="slide border" id="slide40">
+                <iframe
+                  data-src="https://docs.google.com/document/d/e/2PACX-1vTvdwrsXXFrHQKL001qhWgS3lRgOAlxqhEdHJPHcygoDAg-tfWdw4xS-zR3BLHTMWEG9QsPv7RocBes/pub?embedded=true"
+                  width="100%" height="500"></iframe>
+              </div>
+              <div class="slide border" id="slide41">
+                <iframe
+                  data-src="https://docs.google.com/document/d/e/2PACX-1vTF4KFxbIBpDop53hzEES7EAQIhkFwcU5rJz_R8jUxdanFEeV6-uogybUuGeailyxD1KLFdHg_CM_bh/pub?embedded=true"
+                  width="100%" height="500"></iframe>
+              </div>
+            </div>
+            <!-- week 6 -->
+            <div>
+              <div class=" slide" id="slide42">
+                <iframe
+                  data-src="https://docs.google.com/presentation/d/e/2PACX-1vRkrtcLH4ZnNyL33oeA28s8WS81YVxZnMwrVQzQTiKAexjqelEIzfu00UXeL1C6BHgs6XtUz7_QQCgb/embed?start=false&loop=false&delayms=3000"
+                  frameborder="0" width="100%" height="500" allowfullscreen="true" mozallowfullscreen="true"
+                  webkitallowfullscreen="true">
+                </iframe>
+              </div>
+              <div class="slide" id="slide43">
+                <iframe
+                  data-src="https://docs.google.com/presentation/d/e/2PACX-1vSsIvuXMJeutAKEWQKnT-ICdJEEp8FbvsBUhgiiuNUkcuolhxEpxXmmRdUffXOY7nUYbFbqqKZr3A2E/embed?start=false&loop=false&delayms=3000"
+                  frameborder="0" width="100%" height="500" allowfullscreen="true" mozallowfullscreen="true"
+                  webkitallowfullscreen="true"></iframe>
+              </div>
+              <div class="slide" id="slide44">
+                <iframe
+                  data-src="https://docs.google.com/presentation/d/e/2PACX-1vToAQOXRjEgIgPi5ScYCV3bzreFIr278dcuk0-bfPJ_T_HqiF_zcaVcfKbj81LLy76MHnvrL0woFyT7/embed?start=false&loop=false&delayms=3000"
+                  frameborder="0" width="100%" height="500" allowfullscreen="true" mozallowfullscreen="true"
+                  webkitallowfullscreen="true"></iframe>
+              </div>
+              <div class="slide" id="slide45">
+                <iframe data-src="https://www.youtube.com/embed/jiA4SJeRbpM?list=PLyHQCzwOOCs_iNOR0nNcGn55IP8boNCVl"
+                  title="Week 6 - Lecture 1 - Loops" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen width="100%" height="500"></iframe>
+              </div>
+              <div class="slide" id="slide46">
+                <iframe data-src="https://www.youtube.com/embed/oz7QsN4S0HI?list=PLyHQCzwOOCs_iNOR0nNcGn55IP8boNCVl"
+                  title="Week 6 - Lecture 2 - Counter Loops &amp; Dependent Sub Problems" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen width="100%" height="500"></iframe>
+              </div>
+              <div class="slide" id="slide47">
+                <iframe data-src="https://www.youtube.com/embed/U7OmS7MFO3k?list=PLyHQCzwOOCs_iNOR0nNcGn55IP8boNCVl"
+                  title="Week 6 - Lecture 3 - Nested For Loops" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen width="100%" height="500"></iframe>
+              </div>
+              <div class="slide border" id="slide48">
+                <iframe
+                  data-src="https://docs.google.com/document/d/e/2PACX-1vSMa9Vz26EJQxlb-OmncO5EsxyH1LnydCk37gDaK3LRvHV-BzdsI7_SpLCFfYYct8sNuLZapKpIDcdg/pub?embedded=true"
+                  width="100%" height="500"></iframe>
+              </div>
+              <div class="slide border" id="slide49">
+                <iframe
+                  data-src="https://docs.google.com/document/d/e/2PACX-1vRG9EC6gJfW2c8KGwPpK5CBnwIGYXyeghrIhgPVnMyvDAaLl2fKYnYJTRras0k7uXgk0n9hjJxMaTqO/pub?embedded=true"
+                  width="100%" height="500"></iframe>
+              </div>
+              <div class="slide border" id="slide50">
+                <iframe
+                  data-src="https://docs.google.com/document/d/e/2PACX-1vS3tCHe-7ntqRuZMKIx63FoeyNyiP9jByHV8H3_Z_qK0GImy3c1rN8kXVadf8xSPCXFInD1kedQGcEw/pub?embedded=true"
+                  width="100%" height="500"></iframe>
+              </div>
+            </div>
+            <!-- week 7 -->
+            <div>
+              <div class=" slide" id="slide51">
+                <iframe
+                  data-src="https://docs.google.com/presentation/d/e/2PACX-1vTGNB6piM0PPGNan0qzitd4pyy0ArAdLdlEifRGVIFdgPTgxxhCXTps0jP4d4nv8j-tJ9Yp0ub3g_p2/embed?start=false&loop=false&delayms=3000"
+                  frameborder="0" width="100%" height="500" allowfullscreen="true" mozallowfullscreen="true"
+                  webkitallowfullscreen="true">
+                </iframe>
+              </div>
+              <div class="slide" id="slide52">
+                <iframe
+                  data-src="https://docs.google.com/presentation/d/e/2PACX-1vStIaErp-AM4cNqHhCLAZ5Zp70e_KE08r9H8V0_Kc2tdLLhJhbfeJGVSzZXGA_iT4fEKOSir21nWqHs/embed?start=false&loop=false&delayms=3000"
+                  frameborder="0" width="100%" height="500" allowfullscreen="true" mozallowfullscreen="true"
+                  webkitallowfullscreen="true"></iframe>
+              </div>
+              <div class="slide" id="slide53">
+                <iframe
+                  data-src="https://docs.google.com/presentation/d/e/2PACX-1vRHcBkSJMlFCisHiRClvn2caq_5marJJP2qu7cRoM-vKlXnbwJEmwc6ajXX7B__9STikm22foDQBlGq/embed?start=false&loop=false&delayms=3000"
+                  frameborder="0" width="100%" height="500" allowfullscreen="true" mozallowfullscreen="true"
+                  webkitallowfullscreen="true"></iframe>
+              </div>
+              <div class="slide" id="slide54">
+                <iframe data-src="https://www.youtube.com/embed/OqdddZbFkaI?list=PLyHQCzwOOCs_iNOR0nNcGn55IP8boNCVl"
+                  title="Week 7 - Lecture 1 - Arrays" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen width="100%" height="500"></iframe>
+              </div>
+              <div class="slide" id="slide55">
+                <iframe data-src="https://www.youtube.com/embed/LUsXzl0CjQ8?list=PLyHQCzwOOCs_iNOR0nNcGn55IP8boNCVl"
+                  title="Week 7 - Lecture 2 - String as Arrays" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen width="100%" height="500"></iframe>
+              </div>
+              <div class="slide" id="slide56">
+                <iframe data-src="https://www.youtube.com/embed/NEDtR3G2K6I?list=PLyHQCzwOOCs_iNOR0nNcGn55IP8boNCVl"
+                  title="Week 7 - Lecture 3 - Parallel Arrays" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen width="100%" height="500"></iframe>
+              </div>
+              <div class="slide" id="slide57">
+                <iframe data-src="https://www.youtube.com/embed/sp7IfTAzI-Y?list=PLyHQCzwOOCs_iNOR0nNcGn55IP8boNCVl"
+                  title="Week 8 - Lecture 1 - Sorting in Arrays" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen width="100%" height="500"></iframe>
+              </div>
+              <div class="slide" id="slide58">
+                <iframe data-src="https://www.youtube.com/embed/Za6vUsSR0do?list=PLyHQCzwOOCs_iNOR0nNcGn55IP8boNCVl"
+                  title="Week 8 - Lecture 2 - Sliding Window Problem" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen width="100%" height="500"></iframe>
+              </div>
+              <div class="slide border" id="slide59">
+                <iframe
+                  data-src="https://docs.google.com/document/d/e/2PACX-1vScYyiLJBa985Vg1phXCohaL2lhdgYa8owYAmUrj8XMO9A9bzju_PrVgaBfg9aBvbKNjcUF3YqsAVKT/pub?embedded=true"
+                  width="100%" height="500"></iframe>
+              </div>
+              <div class="slide border" id="slide60">
+                <iframe
+                  data-src="https://docs.google.com/document/d/e/2PACX-1vQars2OEVh3ftAMTNG3Zf22NYGxcofmly1E4FtFwNrxYKi5kmgraHwCovUQQIjnIK0pXO1rc1jXYMFy/pub?embedded=true"
+                  width="100%" height="500"></iframe>
+              </div>
+              <div class="slide border" id="slide61">
+                <iframe
+                  data-src="https://docs.google.com/document/d/e/2PACX-1vRhLpI8eUv9ArlwNXsBZQZh1PXaNajoI7J0tQWIiUb0Q96PGOnt6dWh-XAHrerlYSCgO7Q1XZq9Sh0K/pub?embedded=true"
+                  width="100%" height="500"></iframe>
+              </div>
+            </div>
+            <!-- week 8 -->
+            <div>
+              <div class=" slide" id="slide62">
+                <iframe
+                  data-src="https://docs.google.com/presentation/d/e/2PACX-1vS1xdtBRhDJF7IdvHzI8mU2sKDzXA50k9j1BzSCyL2yQzj-PtDDmIcGxScfZDlDdym1LOs8PBI2XIxR/embed?start=false&loop=false&delayms=3000"
+                  frameborder="0" width="100%" height="500" allowfullscreen="true" mozallowfullscreen="true"
+                  webkitallowfullscreen="true">
+                </iframe>
+              </div>
+              <div class="slide" id="slide63">
+                <iframe
+                  data-src="https://docs.google.com/presentation/d/e/2PACX-1vSzQ0RucABh4oHrBvt0PL9iYit0GP7cvx5VkfSBYMrvHtWBn1TqjH8VZZgm0OZl7ZRTonGJczQNv-nm/embed?start=false&loop=false&delayms=3000"
+                  frameborder="0" width="100%" height="500" allowfullscreen="true" mozallowfullscreen="true"
+                  webkitallowfullscreen="true"></iframe>
+              </div>
+              <div class="slide border" id="slide64">
+                <iframe
+                  data-src="https://docs.google.com/document/d/e/2PACX-1vSu02aLA8eeipnov8AiWddvm1TjWxjQaIbRYW1YzaRZATkcuGkA61xgpm3SdJ8p46r36Qo4s-P5BYJg/pub?embedded=true"
+                  width="100%" height="500"></iframe>
+              </div>
+              <div class="slide border" id="slide65">
+                <iframe
+                  data-src="https://docs.google.com/document/d/e/2PACX-1vQKWVCPFXxVxt8forRRfiY4s1r-DcWEYwidnxBNadcVPHVS8l9Y8A1-T3RoCpj7WQVDBjd-GkcxelnI/pub?embedded=true"
+                  width="100%" height="500"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Details Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="footer-content">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-sm-4">
+            <div class="footer-info">
+              <h3>Ustadam</h3>
+              <p>
+                Shalimar, <br>
+                GT Road, Lahore<br><br>
+                <strong>Phone:</strong> +92 8805 885<br>
+                <strong>Email:</strong> cmo@ustadam.org<br>
+              </p>
+            </div>
+          </div>
+
+          <div class="col-sm-4 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="index.html">Home</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="index.html#services">Courses</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="index.html#about">About us</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="index.html#faq">FAQs</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="index.html#contact">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <div class="col-sm-4 footer-links">
+            <h4>Our Courses</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Fundamentals of Python</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Python for Data Science</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Programming Fundamentals</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Programming Fundamentals - Self Paced</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-legal text-center">
+      <div
+        class="container d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-center">
+
+        <div class="d-flex flex-column align-items-center align-items-lg-start">
+          <div class="copyright">
+            &copy; Copyright <strong><span>Ustadam</span></strong>. All Rights Reserved
+          </div>
+          <div class="credits">
+            Designed with
+            <i class="bi bi-heart-fill"></i> by <a><b>Ustadam</b></a>
+          </div>
+        </div>
+
+        <div class="social-links order-first order-lg-last mb-3 mb-lg-0">
+          <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+          <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="google-plus"><i class="bi bi-skype"></i></a>
+          <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        </div>
+
+      </div>
+    </div>
+
+  </footer><!-- End Footer -->
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      showSlide(1);
+    });
+
+    function showSlide(slideNumber) {
+      // Lazy load the iframes before displaying the slide
+      const iframesToLoad = $('#slide' + slideNumber).find('iframe[data-src]');
+      iframesToLoad.each(function () {
+        const iframe = this;
+        if (iframe.dataset.src && !iframe.src) {
+          $('#loader').show();
+
+          iframe.onload = function () {
+            $('#loader').hide();
+          }
+          iframe.src = iframe.dataset.src;
+        }
+      });
+
+      $('.slide').hide();
+      $('#slide' + slideNumber).show();
+
+      $('.list-group-item').removeClass('active');
+      $('.list-group-item:eq(' + (slideNumber - 1) + ')').addClass('active');
+    }
+
+  </script>
+
+</body>
+
+</html>
