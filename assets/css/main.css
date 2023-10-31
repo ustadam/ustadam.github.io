@@ -190,6 +190,10 @@ section {
   margin: 0;
 }
 
+.breadcrumbs a {
+  color: var(--color-secondary);
+}
+
 .breadcrumbs ol {
   display: flex;
   flex-wrap: wrap;
