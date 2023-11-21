@@ -2283,6 +2283,11 @@ section {
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
+.contactForm {
+  height: 650px;
+  border: 1px solid #B49E87;
+}
+
 .contact .map {
   margin-bottom: 40px;
 }
