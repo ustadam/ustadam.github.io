@@ -42,6 +42,28 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+
+  <style>
+    .btn-contents,
+    .btn-contents:focus {
+      font-size: 16px;
+      color: var(--color-white);
+      background: var(--color-primary);
+      padding: 8px 23px;
+      border-radius: 4px;
+      transition: 0.3s;
+      font-family: var(--font-secondary);
+      display: flex;
+      float: inline-end;
+      max-width: fit-content;
+    }
+
+    .btn-contents:hover,
+    .btn-contents:focus:hover {
+      color: var(--color-white);
+      background: rgba(var(--color-primary-rgb), 0.85);
+    }
+  </style>
 </head>
 
 <body>
@@ -162,6 +184,7 @@
                   into REST API</a>
               </li> -->
             </ul>
+
           </div>
 
           <div class="col-lg-6 mt-4 mt-lg-0">
@@ -228,6 +251,8 @@
             </div>
           </div>
         </div>
+        <a href="python-course.html" class="btn-contents">Course Contents</a>
+
       </div>
     </section><!-- End Cource Details Tabs Section -->
 
