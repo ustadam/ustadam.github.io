@@ -518,6 +518,12 @@ section {
 # Mobile Navigation
 --------------------------------------------------------------*/
 @media (max-width: 1279px) {
+
+  .header .btn-getstarted
+  {
+    display: none;
+  }
+  
   .navbar {
     position: fixed;
     top: 0;
