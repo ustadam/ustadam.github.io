@@ -1704,6 +1704,59 @@ section {
 }
 
 /*--------------------------------------------------------------
+# AboutProduct
+--------------------------------------------------------------*/
+.aboutProduct .content {
+  background-color: #f9f3ef;
+  padding: 40px;
+}
+
+.aboutProduct h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--color-primary-light);
+  text-transform: uppercase;
+}
+
+.aboutProduct h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--color-secondary);
+}
+
+.aboutProduct p {
+  margin: 15px 0 30px 0;
+  line-height: 24px;
+}
+
+.aboutProduct .btn-read-more {
+  line-height: 0;
+  padding: 15px 40px;
+  border-radius: 4px;
+  transition: 0.5s;
+  color: #fff;
+  background: var(--color-primary);
+  box-shadow: 0px 5px 25px rgba(var(--color-primary), 0.3);
+}
+
+.aboutProduct .btn-read-more span {
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.aboutProduct .btn-read-more i {
+  margin-left: 5px;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.aboutProduct .btn-read-more:hover i {
+  transform: translateX(5px);
+}
+
+/*--------------------------------------------------------------
 # Testimonials Section
 --------------------------------------------------------------*/
 .testimonials {
