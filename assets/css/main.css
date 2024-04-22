@@ -132,7 +132,12 @@ h6 {
 }
 
 .tab-pane a li:hover {
-  transform: scale(1.1); /* Scale the image on hover */
+  transform: scale(1.1);
+  /* Scale the image on hover */
+}
+
+.tab-pane a li:hover span{
+  text-decoration: underline;
 }
 
 
