@@ -1453,7 +1453,7 @@ section {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 10px;
+  bottom: 3px;
   height: 10px;
   background: rgba(var(--color-primary-rgb), 0.5);
   z-index: -1;
