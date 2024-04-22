@@ -696,26 +696,27 @@ section {
   background: linear-gradient(rgba(var(--color-secondary-rgb), 0.5), rgba(var(--color-secondary-rgb), 0.8)), url("../img/onfocus-content-bg.jpg") center center;
   background-size: cover;
   color: rgba(var(--color-white-rgb), 0.8);
-  padding: 0;
+  padding: 25px 0;
 }
 
 .sectionStyles h2{
   margin: 0 0 50px 0;
   font-size: 48px;
   font-weight: 300;
-  color: var(--color-secondary);
+  color: #fdf7f3;
   font-family: var(--font-secondary);
 }
 
 .sectionStyles h2 span {
-  color: var(--color-primary);
+  color: #eacaa7;
 }
 
 .sectionStyles p {
-  color: rgba(var(--color-secondary-rgb), 0.8);
+  color: #fdf7f3;
   margin: 0 0 30px 0;
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 400;
+  text-align: justify;
   /* line-height: 0; */
 }
 
@@ -761,6 +762,7 @@ section {
   margin: 0 0 30px 0;
   font-size: 20px;
   font-weight: 500;
+  text-align: center;
 }
 
 .hero-animated .animated {
