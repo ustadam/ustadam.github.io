@@ -123,6 +123,10 @@ h6 {
   color: var(--color-primary-light);
 }
 
+.tab-pane li i{
+  font-size: larger;
+}
+
 .cource-details-tabs .details p {
   color: var(--color-primary-dark);
 }
@@ -1290,7 +1294,7 @@ section {
 --------------------------------------------------------------*/
 .about .about-img {
   position: relative;
-  margin: 60px 0 0 60px;
+  margin: 60px 0 0 30px;
 }
 
 .about .about-img:before {
@@ -1301,6 +1305,12 @@ section {
   background: url("../img/about-bg.png") top left;
   background-repeat: no-repeat;
 }
+
+.about .about-img img{
+  border-radius: 20px;
+}
+
+
 
 @media (max-width: 575px) {
   .about .about-img {
