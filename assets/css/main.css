@@ -123,9 +123,18 @@ h6 {
   color: var(--color-primary-light);
 }
 
-.tab-pane li i{
+.tab-pane li i {
   font-size: larger;
 }
+
+.tab-pane a li {
+  transition: transform 0.5s ease-in-out;
+}
+
+.tab-pane a li:hover {
+  transform: scale(1.1); /* Scale the image on hover */
+}
+
 
 .cource-details-tabs .details p {
   color: var(--color-primary-dark);
@@ -304,7 +313,7 @@ section {
   transition: opacity 1s;
 }
 
-.hover-text::after{
+.hover-text::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -321,12 +330,12 @@ section {
   line-height: 0;
 }
 
-.donate:hover{
+.donate:hover {
   background: rgba(var(--color-primary-rgb), 0.85);
   color: var(--color-white);
 }
 
-.donate:hover .hover-text{
+.donate:hover .hover-text {
   visibility: visible;
   opacity: 1;
 }
@@ -336,6 +345,7 @@ section {
   visibility: visible;
   opacity: 1;
 }
+
 /*--------------------------------------------------------------
 # Disable aos animation delay on mobile devices
 --------------------------------------------------------------*/
@@ -589,11 +599,10 @@ section {
 --------------------------------------------------------------*/
 @media (max-width: 1279px) {
 
-  .header .btn-getstarted
-  {
+  .header .btn-getstarted {
     display: none;
   }
-  
+
   .navbar {
     position: fixed;
     top: 0;
@@ -696,14 +705,14 @@ section {
 /*--------------------------------------------------------------
 # Index Page
 --------------------------------------------------------------*/
-.sectionStyles{
+.sectionStyles {
   background: linear-gradient(rgba(var(--color-secondary-rgb), 0.5), rgba(var(--color-secondary-rgb), 0.8)), url("../img/onfocus-content-bg.jpg") center center;
   background-size: cover;
   color: rgba(var(--color-white-rgb), 0.8);
   padding: 25px 0;
 }
 
-.sectionStyles h2{
+.sectionStyles h2 {
   margin: 0 0 50px 0;
   font-size: 48px;
   font-weight: 300;
@@ -1306,7 +1315,7 @@ section {
   background-repeat: no-repeat;
 }
 
-.about .about-img img{
+.about .about-img img {
   border-radius: 20px;
 }
 
@@ -3435,7 +3444,8 @@ section {
   color: var(--color-white);
 }
 
-.footer .footer-legal .credits a,i {
+.footer .footer-legal .credits a,
+i {
   color: var(--color-secondary-light);
 }
 
