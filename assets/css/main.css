@@ -1449,7 +1449,9 @@ section {
 
 .cta li i{
   font-size: larger;
+  color: #dc6e4c;
 }
+
 
 @media (max-width: 992px) {
   .cta .container {
@@ -1457,18 +1459,19 @@ section {
   }
 }
 
-.cta .content h3 {
-  color: var(--color-secondary);
+.cta h3 {
+  color: #dc6e4c;
   font-size: 48px;
   font-weight: 700;
+  margin-bottom: 35px;
 }
 
-.cta .content h3 em {
+.cta h3 em {
   font-style: normal;
   position: relative;
 }
 
-.cta .content h3 em:after {
+.cta h3 em:after {
   content: "";
   position: absolute;
   left: 0;
@@ -1483,6 +1486,10 @@ section {
   color: var(--color-secondary);
   font-weight: 600;
   font-size: 18px;
+}
+
+.cta .content p strong{
+  color: #dc6e4c;
 }
 
 .cta .content .cta-btn {
@@ -1543,7 +1550,7 @@ section {
 }
 
 .onfocus .content {
-  background: linear-gradient(rgba(var(--color-secondary-rgb), 0.5), rgba(var(--color-secondary-rgb), 0.8)), url("../img/onfocus-content-bg.jpg") center center;
+  background: linear-gradient(rgba(var(--color-secondary-rgb), 0.5), rgba(var(--color-secondary-rgb), 0.8)), url("../img/onfocus-content-bg.jpg") top center;
   background-size: cover;
   color: rgba(var(--color-white-rgb), 0.8);
   padding: 40px;
