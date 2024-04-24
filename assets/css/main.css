@@ -779,7 +779,7 @@ section {
 }
 
 .hero-animated h2 span {
-  color: #dc6e4c;
+  color: #2b5a62;
 }
 
 .hero-animated p {
@@ -1346,13 +1346,24 @@ section {
 }
 
 .about h3 {
-  color: var(--color-secondary);
+  color: #af3329;
   font-family: var(--font-secondary);
   font-weight: 300;
   font-size: 32px;
   margin-bottom: 20px;
 }
 
+.about li span,
+.about li i{
+  color: #af3329;
+  font-size: 20px;
+}
+
+.about li p,
+.about p{
+  color: #060606;
+  font-style: normal !important;
+}
 @media (max-width: 768px) {
   .about h3 {
     font-size: 28px;
