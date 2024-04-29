@@ -136,7 +136,7 @@ h6 {
   /* Scale the image on hover */
 }
 
-.tab-pane a li:hover span{
+.tab-pane a li:hover span {
   text-decoration: underline;
 }
 
@@ -359,6 +359,7 @@ section {
     transition-delay: 0 !important;
   }
 }
+
 /*--------------------------------------------------------------
 # What - Flip Cards
 --------------------------------------------------------------*/
@@ -401,11 +402,11 @@ section {
 }
 
 @media (max-width: 768px) {
-  .flip-card-image{
+  .flip-card-image {
     width: 55%;
   }
 
-  .flip-card-front{
+  .flip-card-front {
     border: 1px var(--color-primary) solid;
   }
 }
@@ -418,6 +419,19 @@ section {
   color: #fff;
   padding: 10px;
   box-sizing: border-box;
+  height: 100%;
+}
+
+.card-overlay-heading {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-overlay-heading .card-title {
+  color: #fff;
+  font-weight: 550;
 }
 
 @media (max-width: 992px) {
@@ -832,7 +846,7 @@ section {
 }
 
 @media (max-width: 575px) {
-  .sectionStyles p{
+  .sectionStyles p {
     font-size: 20px !important;
     margin-top: 5px;
   }
@@ -1441,17 +1455,18 @@ section {
 }
 
 .about li span,
-.about li i{
+.about li i {
   color: #af3329;
   font-size: 20px;
 }
 
 .about li p,
-.about .content p{
+.about .content p {
   color: var(--color-gray);
   font-size: 17px;
   font-style: normal !important;
 }
+
 @media (max-width: 768px) {
   .about h3 {
     font-size: 28px;
@@ -1535,7 +1550,7 @@ section {
   border-radius: 15px;
 }
 
-.cta li i{
+.cta li i {
   font-size: larger;
   color: #dc6e4c;
 }
@@ -1576,7 +1591,7 @@ section {
   font-size: 18px;
 }
 
-.cta .content p strong{
+.cta .content p strong {
   color: #dc6e4c;
 }
 
