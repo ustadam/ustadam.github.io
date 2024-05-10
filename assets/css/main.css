@@ -1648,12 +1648,12 @@ section {
 
 .onfocus .video-play {
   min-height: 400px;
-  background: linear-gradient(rgba(var(--color-black-rgb), 0.4), rgba(var(--color-black-rgb), 0.7)), url("../img/msg.jpeg") center center;
+  background: linear-gradient(rgb(228 220 220/ 40%), rgb(47 47 47/70%)), url("../img/msgs.png") center center;
   background-size: cover;
 }
 
 .onfocus .content {
-  background: linear-gradient(rgba(var(--color-secondary-rgb), 0.5), rgba(var(--color-secondary-rgb), 0.8)), url("../img/onfocus-content-bg.jpg") top center;
+  background: linear-gradient(rgb(223 63 92/76%), rgb(48 75 126/84%)), url("../img/onfocus-content-bg.jpg") top center;
   background-size: cover;
   color: rgba(var(--color-white-rgb), 0.8);
   padding: 40px;
