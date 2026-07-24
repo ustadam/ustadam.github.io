@@ -2022,6 +2022,34 @@ section {
   transform: translateX(5px);
 }
 
+.aboutProduct .btn-read-more-sec {
+  line-height: 0;
+  padding: 15px 40px;
+  border-radius: 4px;
+  transition: 0.5s;
+  color: #513b22;
+  background: #bf823f;
+  box-shadow: 0px 5px 25px rgba(var(--color-primary), 0.3);
+}
+
+.aboutProduct .btn-read-more-sec span {
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.aboutProduct .btn-read-more-sec i {
+  margin-left: 5px;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.aboutProduct .btn-read-more-sec:hover i {
+  transform: translateX(5px);
+}
+
+
 
 /*--------------------------------------------------------------
 # PAGE 404 Section
