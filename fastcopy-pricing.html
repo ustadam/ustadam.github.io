@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-54S4GRH9');</script>
+  <!-- End Google Tag Manager -->
+
+  <meta name="google-adsense-account" content="ca-pub-2051772598107736">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Ustadam - FastCopy Pricing</title>
+  <meta content="Simple and transparent campus printing rates with FastCopy by Ustadam. Calculate per-page costs with no hidden fees." name="description">
+  <meta content="FastCopy, campus printing, printing rates, student print wallet, Ustadam" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/logo-bg.png" rel="icon">
+  <link href="assets/img/logo-bg.png" rel="ustadam-touch-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <link href="assets/css/variables-ustadam.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <style>
+    /* FastCopy Custom Styling matching Ustadam Design System */
+    .fc-hero {
+      background: linear-gradient(135deg, var(--color-primary-dark) 0%, var(--color-primary) 100%);
+      color: #fff;
+      padding: 70px 0 60px;
+      text-align: center;
+      position: relative;
+    }
+
+    .fc-hero h1 {
+      color: #fff;
+      font-size: 2.5rem;
+      font-weight: 700;
+      line-height: 1.25;
+      margin-bottom: 15px;
+    }
+
+    .fc-hero h1 span {
+      color: var(--color-secondary);
+      font-style: italic;
+    }
+
+    .fc-hero p {
+      max-width: 680px;
+      margin: 0 auto 28px;
+      font-size: 1.08rem;
+      line-height: 1.7;
+      opacity: 0.92;
+    }
+
+    .fc-hero .btn-estimate {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--color-secondary);
+      color: #fff;
+      padding: 12px 32px;
+      border-radius: 50px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(248, 129, 37, 0.35);
+    }
+
+    .fc-hero .btn-estimate:hover {
+      background: var(--color-secondary-light);
+      color: #fff;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(248, 129, 37, 0.45);
+    }
+
+    /* Tariff Cards */
+    .fc-card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+      padding: 36px 30px;
+      border: 1px solid #eef0f4;
+      border-top: 4px solid var(--color-primary);
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .fc-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 16px 35px rgba(44, 89, 157, 0.12);
+    }
+
+    .fc-card.featured {
+      border-top-color: var(--color-secondary);
+    }
+
+    .fc-card h3 {
+      font-size: 1.45rem;
+      font-weight: 700;
+      color: var(--color-primary);
+      margin-bottom: 8px;
+    }
+
+    .fc-card .fc-desc {
+      color: #6c757d;
+      font-size: 0.95rem;
+      line-height: 1.6;
+      margin-bottom: 24px;
+      min-height: 48px;
+    }
+
+    .fc-rates-box {
+      background: #f8fafc;
+      border-radius: 8px;
+      padding: 18px 20px;
+      border: 1px solid #e9ecef;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+
+    .fc-rate-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.95rem;
+    }
+
+    .fc-rate-row span {
+      font-weight: 600;
+      color: #495057;
+    }
+
+    .fc-rate-row b {
+      font-size: 1.15rem;
+      color: var(--color-primary);
+    }
+
+    .fc-rate-row small {
+      font-size: 0.8rem;
+      font-weight: 400;
+      color: #868e96;
+    }
+
+    .fc-card-features {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      font-size: 0.92rem;
+      color: #495057;
+    }
+
+    .fc-card-features li {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .fc-card-features li i {
+      color: var(--color-secondary);
+      font-size: 1.1rem;
+      flex-shrink: 0;
+    }
+
+    /* Note Banner */
+    .fc-note {
+      background: #fdfaf6;
+      border-left: 4px solid var(--color-secondary);
+      border-radius: 8px;
+      padding: 20px 24px;
+      margin-top: 35px;
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+    }
+
+    .fc-note i {
+      color: var(--color-secondary);
+      font-size: 1.6rem;
+      line-height: 1;
+      margin-top: 2px;
+    }
+
+    .fc-note h4 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--color-primary-dark);
+      margin-bottom: 4px;
+    }
+
+    .fc-note p {
+      margin: 0;
+      font-size: 0.92rem;
+      line-height: 1.6;
+      color: #555;
+    }
+
+    /* Calculator Section */
+    .fc-calc-wrapper {
+      background: #fff;
+      border-radius: 14px;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+      padding: 36px 32px;
+      border: 1px solid #e9ecef;
+      border-top: 5px solid var(--color-primary);
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    .fc-calc-head {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 26px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid #edf2f7;
+    }
+
+    .fc-calc-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
+      background: var(--color-primary);
+      color: #fff;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.3rem;
+    }
+
+    .fc-field {
+      margin-bottom: 22px;
+    }
+
+    .fc-field label {
+      display: block;
+      font-size: 0.92rem;
+      font-weight: 600;
+      color: var(--color-primary-dark);
+      margin-bottom: 8px;
+    }
+
+    .fc-seg-group {
+      display: grid;
+      gap: 10px;
+    }
+
+    .fc-seg-2 {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .fc-seg-3 {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .fc-btn-toggle {
+      padding: 10px 14px;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      cursor: pointer;
+      border: 1px solid #dee2e6;
+      background: #fff;
+      color: #495057;
+      transition: all 0.2s ease;
+      text-align: center;
+    }
+
+    .fc-btn-toggle:hover {
+      border-color: var(--color-primary);
+      color: var(--color-primary);
+    }
+
+    .fc-btn-toggle.active {
+      background: var(--color-primary);
+      border-color: var(--color-primary);
+      color: #fff;
+      box-shadow: 0 4px 10px rgba(44, 89, 157, 0.25);
+    }
+
+    .fc-input-group {
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+
+    .fc-input-group i {
+      position: absolute;
+      left: 14px;
+      color: #868e96;
+      font-size: 1.1rem;
+    }
+
+    .fc-input-group input {
+      width: 100%;
+      padding: 11px 16px 11px 42px;
+      border: 1px solid #dee2e6;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: 600;
+      color: #212529;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+
+    .fc-input-group input:focus {
+      border-color: var(--color-primary);
+      box-shadow: 0 0 0 3px rgba(44, 89, 157, 0.15);
+    }
+
+    /* Bill Breakdown */
+    .fc-bill-box {
+      background: #f8fafc;
+      border-radius: 10px;
+      padding: 22px 24px;
+      border: 1px solid #e2e8f0;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-top: 15px;
+    }
+
+    .fc-bill-title {
+      font-weight: 700;
+      color: var(--color-primary-dark);
+      border-bottom: 1px solid #e2e8f0;
+      padding-bottom: 10px;
+      font-size: 0.98rem;
+    }
+
+    .fc-bill-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.93rem;
+      color: #495057;
+    }
+
+    .fc-bill-row b {
+      color: var(--color-primary-dark);
+    }
+
+    .fc-bill-row small {
+      color: #868e96;
+    }
+
+    .fc-bill-total {
+      border-top: 2px dashed #cbd5e1;
+      padding-top: 14px;
+      margin-top: 4px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .fc-bill-total span {
+      font-weight: 700;
+      font-size: 1.05rem;
+      color: var(--color-primary-dark);
+    }
+
+    .fc-bill-total b {
+      font-size: 1.5rem;
+      color: var(--color-secondary);
+    }
+
+    .fc-calc-footer {
+      display: flex;
+      gap: 8px;
+      justify-content: center;
+      align-items: center;
+      font-size: 0.83rem;
+      color: #868e96;
+      margin-top: 18px;
+    }
+
+    /* FAQ Accordion */
+    .fc-faq-accordion .accordion-item {
+      border: 1px solid #e9ecef;
+      border-radius: 8px;
+      margin-bottom: 16px;
+      overflow: hidden;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.03);
+    }
+
+    .fc-faq-accordion .accordion-button {
+      font-weight: 600;
+      font-size: 1.02rem;
+      color: var(--color-primary-dark);
+      background: #fff;
+      padding: 18px 24px;
+      box-shadow: none;
+    }
+
+    .fc-faq-accordion .accordion-button:not(.collapsed) {
+      color: var(--color-primary);
+      background: #f8fafc;
+      border-bottom: 1px solid #eef2f6;
+    }
+
+    .fc-faq-accordion .accordion-body {
+      padding: 20px 24px;
+      font-size: 0.95rem;
+      line-height: 1.7;
+      color: #495057;
+      background: #fff;
+    }
+
+    .fc-faq-accordion .accordion-body ul {
+      margin-top: 10px;
+      padding-left: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    @media (max-width: 768px) {
+      .fc-hero h1 {
+        font-size: 2rem;
+      }
+      .fc-calc-wrapper {
+        padding: 24px 18px;
+      }
+      .fc-seg-3 {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-54S4GRH9" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top" data-scrollto-offset="0">
+    <div class="container-fluid d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex justify-content-center align-items-center scrollto">
+        <img src="assets/img/logo.png" alt="Ustadam Logo">
+        <h1 class="logo pt-1 mt-1">Ustadam<span>.</span></h1>
+      </a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="index.html" class="nav-link scrollto">Home</a></li>
+          <li><a class="nav-link scrollto" href="tech-courses.html">Courses</a></li>
+          <li><a class="nav-link scrollto" href="books.html">Books</a></li>
+          <li><a class="nav-link scrollto active" href="products.html">Products</a></li>
+          <li><a class="nav-link scrollto" href="index.html#faq">FAQs</a></li>
+          <li><a class="nav-link scrollto" href="instructors.html">Instructors</a></li>
+          <li><a class="nav-link scrollto" href="contact.html">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle d-none"></i>
+      </nav><!-- .navbar -->
+
+      <a class="btn-getstarted scrollto" href="donate.html" target="_blank"><i class="bi bi-bag-heart me-1"
+          style="color: #fff;"></i> Donate to Ustadam </a>
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>FastCopy Pricing</h2>
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li>FastCopy Pricing</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= Hero Section ======= -->
+    <section class="fc-hero">
+      <div class="container" data-aos="zoom-out">
+        <h1>Simple &amp; Transparent <span>Campus Printing Rates</span></h1>
+        <p>
+          No hidden costs. Calculate your printing expenses instantly and pay directly using your student wallet.
+          Standard 2.5% tax &amp; service charges apply.
+        </p>
+        <a href="#estimator" class="btn-estimate">
+          <i class="bi bi-calculator"></i> Estimate your bill
+        </a>
+      </div>
+    </section><!-- End Hero Section -->
+
+    <!-- ======= Base Tariffs Section ======= -->
+    <section class="sectionStyles py-5">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Base <span>Tariffs</span></h2>
+          <p>Per-page rates for every print option. All tariffs are exclusive of tax &amp; service charges.</p>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+
+          <!-- Single Sided Print -->
+          <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="fc-card">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <h3>Single Sided Print</h3>
+                <span class="badge bg-primary-subtle text-primary border border-primary-subtle rounded-pill px-3 py-1">Handouts &amp; Resumes</span>
+              </div>
+              <p class="fc-desc">Standard prints on one side of A4 sheets. Ideal for lecture handouts, resumes, and simple assignments.</p>
+              
+              <div class="fc-rates-box">
+                <div class="fc-rate-row">
+                  <span>Black &amp; White</span>
+                  <b>7 PKR <small>/ page</small></b>
+                </div>
+                <div class="fc-rate-row">
+                  <span>Colorful Print</span>
+                  <b>17 - 30 PKR <small>/ page</small></b>
+                </div>
+              </div>
+
+              <ul class="fc-card-features">
+                <li><i class="bi bi-check-circle-fill"></i> Standard A4 paper size included</li>
+                <li><i class="bi bi-check-circle-fill"></i> Dynamic color quality selection</li>
+                <li><i class="bi bi-check-circle-fill"></i> Instant delivery to shop station</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Double Sided Print -->
+          <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="fc-card featured">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <h3>Double Sided Print</h3>
+                <span class="badge bg-warning-subtle text-warning-emphasis border border-warning-subtle rounded-pill px-3 py-1">Eco-Friendly &amp; Value</span>
+              </div>
+              <p class="fc-desc">Print on both sides of each page. Perfect for saving paper, binding books, and reducing binder bulk.</p>
+              
+              <div class="fc-rates-box">
+                <div class="fc-rate-row">
+                  <span>Black &amp; White</span>
+                  <b>8 PKR <small>/ page</small></b>
+                </div>
+                <div class="fc-rate-row">
+                  <span>Colorful Print</span>
+                  <b>17 - 30 PKR <small>/ page</small></b>
+                </div>
+              </div>
+
+              <ul class="fc-card-features">
+                <li><i class="bi bi-check-circle-fill"></i> Reduced binder bulk and weight</li>
+                <li><i class="bi bi-check-circle-fill"></i> Cost-effective multi-page notes printing</li>
+                <li><i class="bi bi-check-circle-fill"></i> Environmentally responsible printing</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Tax Note -->
+        <div class="fc-note" data-aos="fade-up" data-aos-delay="300">
+          <i class="bi bi-info-circle-fill"></i>
+          <div>
+            <h4>Tax &amp; Service Charges Note</h4>
+            <p>
+              All display tariffs are exclusive of Tax &amp; Service Charges. A standard flat charge of
+              <strong>2.5%</strong> will be calculated on your total print bill at checkout.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Base Tariffs Section -->
+
+    <!-- ======= Live Estimator Section ======= -->
+    <section id="estimator" class="py-5" style="background: #f4f6fa;">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Live <span>Estimator</span></h2>
+          <p>Pick your options and see the cost update as you go in real-time.</p>
+        </div>
+
+        <div class="fc-calc-wrapper" data-aos="zoom-in" data-aos-delay="100">
+          <div class="fc-calc-head">
+            <div class="fc-calc-icon">
+              <i class="bi bi-calculator"></i>
+            </div>
+            <div>
+              <h3 class="m-0" style="font-size: 1.3rem; font-weight: 700; color: var(--color-primary-dark);">Cost Calculator</h3>
+              <small class="text-muted">Instant rate calculation with transparent tax breakdown</small>
+            </div>
+          </div>
+
+          <!-- Sides Selector -->
+          <div class="fc-field">
+            <label>Sides</label>
+            <div class="fc-seg-group fc-seg-2">
+              <button type="button" class="fc-btn-toggle active" id="btn-side-single" onclick="setSide('single')">
+                <i class="bi bi-file-earmark me-1"></i> Single Sided
+              </button>
+              <button type="button" class="fc-btn-toggle" id="btn-side-double" onclick="setSide('double')">
+                <i class="bi bi-book me-1"></i> Double Sided
+              </button>
+            </div>
+          </div>
+
+          <!-- Color Mode Selector -->
+          <div class="fc-field">
+            <label>Color Selection</label>
+            <div class="fc-seg-group fc-seg-2">
+              <button type="button" class="fc-btn-toggle active" id="btn-color-bw" onclick="setColorMode('bw')">
+                <i class="bi bi-circle-half me-1"></i> Black &amp; White
+              </button>
+              <button type="button" class="fc-btn-toggle" id="btn-color-color" onclick="setColorMode('color')">
+                <i class="bi bi-palette me-1"></i> Colorful
+              </button>
+            </div>
+          </div>
+
+          <!-- Color Quality Selector (shown conditionally) -->
+          <div class="fc-field" id="quality-field" style="display: none;">
+            <label>Color Quality</label>
+            <div class="fc-seg-group fc-seg-3">
+              <button type="button" class="fc-btn-toggle active" id="btn-qual-17" onclick="setColorQuality(17)">
+                Standard (17 PKR)
+              </button>
+              <button type="button" class="fc-btn-toggle" id="btn-qual-23" onclick="setColorQuality(23)">
+                Enhanced (23 PKR)
+              </button>
+              <button type="button" class="fc-btn-toggle" id="btn-qual-30" onclick="setColorQuality(30)">
+                Premium (30 PKR)
+              </button>
+            </div>
+            <div id="quality-desc" class="mt-2 text-muted" style="font-size: 0.84rem; line-height: 1.4;">
+              Simple accents, charts, diagrams, and high-volume school presentations.
+            </div>
+          </div>
+
+          <!-- Page Count Input -->
+          <div class="fc-field">
+            <label for="page-count-input">Page Count</label>
+            <div class="fc-input-group">
+              <i class="bi bi-file-earmark-text"></i>
+              <input type="number" id="page-count-input" min="1" max="9999" value="10" oninput="updateCalculation()">
+            </div>
+          </div>
+
+          <!-- Bill Breakdown Output -->
+          <div class="fc-bill-box">
+            <div class="fc-bill-title d-flex justify-content-between">
+              <span>Estimated Bill Breakdown</span>
+              <span class="badge bg-secondary-subtle text-secondary-emphasis">FastCopy Wallet</span>
+            </div>
+            <div class="fc-bill-row">
+              <span>Base Rate:</span>
+              <b id="calc-base-rate">7 PKR / page</b>
+            </div>
+            <div class="fc-bill-row">
+              <span>Pages:</span>
+              <b id="calc-page-count">10</b>
+            </div>
+            <div class="fc-bill-row">
+              <span>Print Subtotal:</span>
+              <b id="calc-subtotal">70.0 PKR</b>
+            </div>
+            <div class="fc-bill-row">
+              <span>Tax &amp; Service Charge <small>(2.5%)</small>:</span>
+              <b id="calc-tax">1.75 PKR</b>
+            </div>
+            <div class="fc-bill-total">
+              <span>Total Estimate:</span>
+              <b id="calc-total">71.75 PKR</b>
+            </div>
+          </div>
+
+          <p class="fc-calc-footer">
+            <i class="bi bi-printer"></i> Live estimation rates apply to FastCopy partnered campus shops.
+          </p>
+        </div>
+
+      </div>
+    </section><!-- End Live Estimator Section -->
+
+    <!-- ======= FAQ Section ======= -->
+    <section class="sectionStyles py-5">
+      <div class="container" style="max-width: 860px;" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Frequently Asked <span>Questions</span></h2>
+          <p>Common user queries about pricing, wallets, and payments.</p>
+        </div>
+
+        <div class="accordion fc-faq-accordion" id="faqAccordion">
+
+          <!-- FAQ 1 -->
+          <div class="accordion-item" data-aos="fade-up" data-aos-delay="100">
+            <h2 class="accordion-header" id="faqHead1">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqCol1" aria-expanded="true" aria-controls="faqCol1">
+                Are there any hidden costs?
+              </button>
+            </h2>
+            <div id="faqCol1" class="accordion-collapse collapse show" aria-labelledby="faqHead1" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                No, we pride ourselves on absolute transparency. The final cost of your print job consists solely of the base printing tariff (calculated by the number of pages, sides, and color mode) plus a standard 2.5% tax and service charge. There are no registration fees, platform subscription charges, or hidden order processing fees.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="accordion-item" data-aos="fade-up" data-aos-delay="200">
+            <h2 class="accordion-header" id="faqHead2">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCol2" aria-expanded="false" aria-controls="faqCol2">
+                How is the Color Quality price determined?
+              </button>
+            </h2>
+            <div id="faqCol2" class="accordion-collapse collapse" aria-labelledby="faqHead2" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Color quality printing ranges from 17 PKR to 30 PKR based on the density and quality required:
+                <ul>
+                  <li><strong>Standard (17 PKR):</strong> Simple accents, charts, diagrams, and high-volume school presentations.</li>
+                  <li><strong>Enhanced (23 PKR):</strong> Better saturation for standard photos, colorful flyers, and premium projects.</li>
+                  <li><strong>Premium (30 PKR):</strong> Full page high-density color prints, graphics, and high-resolution photos.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="accordion-item" data-aos="fade-up" data-aos-delay="300">
+            <h2 class="accordion-header" id="faqHead3">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCol3" aria-expanded="false" aria-controls="faqCol3">
+                Is the 2.5% Tax &amp; Service Charge applied to wallet top-ups?
+              </button>
+            </h2>
+            <div id="faqCol3" class="accordion-collapse collapse" aria-labelledby="faqHead3" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                No, wallet top-ups are completely free. When you add funds to your FastCopy wallet via mobile payment processors (JazzCash, EasyPaisa, bank transfer), 100% of the amount is credited directly to your balance. The 2.5% Tax &amp; Service Charge is only calculated on active print orders at the time of purchase.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="accordion-item" data-aos="fade-up" data-aos-delay="400">
+            <h2 class="accordion-header" id="faqHead4">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCol4" aria-expanded="false" aria-controls="faqCol4">
+                What happens if a print job fails or is rejected?
+              </button>
+            </h2>
+            <div id="faqCol4" class="accordion-collapse collapse" aria-labelledby="faqHead4" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                If a print shop has a paper jam, printer breakdown, or rejects your print file, the shop worker can cancel your order through the print queue application. The full amount paid (including the 2.5% Tax &amp; Service Charge) is refunded instantly to your student app wallet ledger.
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End FAQ Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="footer-content">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-sm-4">
+            <div class="footer-info">
+              <h3>Ustadam</h3>
+              <p>
+                Shalimar, <br>
+                GT Road, Lahore<br><br>
+                <strong>Phone:</strong> +92 306 8805 885<br>
+                <strong>Email:</strong> cmo@ustadam.org<br>
+              </p>
+            </div>
+          </div>
+
+          <div class="col-sm-4 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="index.html">Home</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="index.html#what">Services</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="tech-courses.html">Technical Courses</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="products.html">Products</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="donate.html">Donate Us</a></li>
+            </ul>
+          </div>
+
+          <div class="col-sm-4 footer-links">
+            <h4>Our Technical Courses</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://python.ustadam.org/">Python MasterClass</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://fastcopy.ustadam.org/">FastCopy Product</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="oop-course.html">OOP MasterClass</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="pf-course.html">PF Course</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-legal text-center">
+      <div class="container d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-center">
+
+        <div class="d-flex flex-column align-items-center align-items-lg-start">
+          <div class="copyright">
+            &copy; Copyright <strong><span>Ustadam</span></strong>. All Rights Reserved
+          </div>
+        </div>
+
+        <div class="social-links order-first order-lg-last mb-3 mb-lg-0">
+          <a href="https://twitter.com/ustadamOrg" target="_blank" class="twitter"><i class="bi bi-twitter"></i></a>
+          <a href="https://facebook.com/ustadamOrg" target="_blank" class="facebook"><i class="bi bi-facebook"></i></a>
+          <a href="https://instagram.com/ustadamOrg" target="_blank" class="instagram"><i class="bi bi-instagram"></i></a>
+          <a href="https://linkedin.com/company/ustadam" target="_blank" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        </div>
+
+      </div>
+    </div>
+
+  </footer><!-- End Footer -->
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <!-- FastCopy Calculator Logic -->
+  <script>
+    const TAX_RATE = 0.025; // 2.5%
+
+    const QUALITIES = {
+      17: { label: 'Standard', desc: 'Simple accents, charts, diagrams, and high-volume school presentations.' },
+      23: { label: 'Enhanced', desc: 'Better saturation for standard photos, colorful flyers, and premium projects.' },
+      30: { label: 'Premium', desc: 'Full page high-density color prints, graphics, and high-resolution photos.' }
+    };
+
+    let currentSide = 'single'; // 'single' | 'double'
+    let currentColorMode = 'bw'; // 'bw' | 'color'
+    let currentColorQuality = 17; // 17 | 23 | 30
+
+    function setSide(side) {
+      currentSide = side;
+      document.getElementById('btn-side-single').classList.toggle('active', side === 'single');
+      document.getElementById('btn-side-double').classList.toggle('active', side === 'double');
+      updateCalculation();
+    }
+
+    function setColorMode(mode) {
+      currentColorMode = mode;
+      document.getElementById('btn-color-bw').classList.toggle('active', mode === 'bw');
+      document.getElementById('btn-color-color').classList.toggle('active', mode === 'color');
+      
+      const qualityField = document.getElementById('quality-field');
+      if (mode === 'color') {
+        qualityField.style.display = 'block';
+      } else {
+        qualityField.style.display = 'none';
+      }
+      updateCalculation();
+    }
+
+    function setColorQuality(qual) {
+      currentColorQuality = qual;
+      [17, 23, 30].forEach(q => {
+        document.getElementById(`btn-qual-${q}`).classList.toggle('active', q === qual);
+      });
+      document.getElementById('quality-desc').innerText = QUALITIES[qual].desc;
+      updateCalculation();
+    }
+
+    function updateCalculation() {
+      const pageInput = document.getElementById('page-count-input');
+      let pages = parseInt(pageInput.value) || 0;
+      if (pages < 1) pages = 1;
+
+      let baseRate = 0;
+      if (currentColorMode === 'bw') {
+        baseRate = currentSide === 'single' ? 7 : 8;
+      } else {
+        baseRate = currentColorQuality;
+      }
+
+      const subtotal = baseRate * pages;
+      const tax = subtotal * TAX_RATE;
+      const total = subtotal + tax;
+
+      document.getElementById('calc-base-rate').innerText = `${baseRate} PKR / page`;
+      document.getElementById('calc-page-count').innerText = pages;
+      document.getElementById('calc-subtotal').innerText = `${subtotal.toFixed(1)} PKR`;
+      document.getElementById('calc-tax').innerText = `${tax.toFixed(2)} PKR`;
+      document.getElementById('calc-total').innerText = `${total.toFixed(2)} PKR`;
+    }
+
+    // Initialize on DOMContentLoaded
+    document.addEventListener('DOMContentLoaded', () => {
+      updateCalculation();
+    });
+  </script>
+
+</body>
+
+</html>
